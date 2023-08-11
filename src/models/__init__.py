@@ -1,3 +1,4 @@
+"""Expose models."""
 from .base import Base
 from .birthday import Birthday
 

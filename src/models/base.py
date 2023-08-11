@@ -1,4 +1,6 @@
+"""Defines the declarative base."""
 from sqlalchemy.orm import DeclarativeBase
 
+
 class Base(DeclarativeBase):
-    pass
+    """Currently blank but could have other shared columns later."""
