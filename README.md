@@ -21,4 +21,4 @@ This error is sqlalchemy-specific, but the autofix actually introduces bugs.
 
 A current work-around is to disable TCH003.
 
-One consideration is that SQLAlchemy models imported as part of a `Mapped[Model]` relationship will need to go under the `TYPE_CHECKING` flag, while std lib types are not supported in this fashion. The likely cause of this is that `Mapped["Model"]` is supported, while `Mapped["date"]` is not.
+One consideration is that SQLAlchemy models imported as part of a `Mapped[Model]` relationship will need to go under the `TYPE_CHECKING` flag, while std lib types are not supported in this fashion. The likely cause of this is that `Mapped["Model"]` is supported by SQLAlchemy, while `Mapped["date"]` is not.
